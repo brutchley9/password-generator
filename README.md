@@ -1,8 +1,9 @@
 # JavaScript Password Generator
 
-*project description*
+The purpose of this project was to allow the user to produce a randomly-generated password, given parameters entered by the user beforehand. This was done by utilizing resources like W3Schools and Mozilla to properly compile a series of variables and functions within javascript to produce this outcome.
 
 Screenshot of webpage:
+<img src="assets/images/module3image.png">
 ---
 
 Follow link https://brutchley9.github.io/module-3-challenge/ to access this website!
