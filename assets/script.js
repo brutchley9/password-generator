@@ -18,32 +18,30 @@ function gitrandomindex(arraylength) {
   return Math.floor(Math.random() * arraylength)
 }
 
-if (uppercaseLetters) {
-  gitrandomindex(uppercaseLettersTypes.length)
-} else {
-  console.log("")
-}
-
-if (lowercaseLetters) {
-  gitrandomindex(lowercaseLettersTypes.length)
-} else {
-  console.log("")
-}
-
-if (numbers) {
-  gitrandomindex(numberTypes.length)
-} else {
-  console.log("")
-}
-
-if (specialCharacters) {
-  gitrandomindex(specialCharacterTypes.length)
-} else {
-  console.log("")
-}
-
 function generatePassword() {
-  console.log(numbers)
+  if (uppercaseLetters) {
+    gitrandomindex(uppercaseLettersTypes.length)
+  } else {
+    console.log("")
+  }
+  
+  if (lowercaseLetters) {
+    gitrandomindex(lowercaseLettersTypes.length)
+  } else {
+    console.log("")
+  }
+  
+  if (numbers) {
+    gitrandomindex(numberTypes.length)
+  } else {
+    console.log("")
+  }
+  
+  if (specialCharacters) {
+    gitrandomindex(specialCharacterTypes.length)
+  } else {
+    console.log("")
+  }
 }
 
 
