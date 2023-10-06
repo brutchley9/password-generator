@@ -22,25 +22,25 @@ function generatePassword() {
   if (uppercaseLetters) {
     gitrandomindex(uppercaseLettersTypes.length)
   } else {
-    console.log("")
+    console.log("No Uppercase")
   }
   
   if (lowercaseLetters) {
     gitrandomindex(lowercaseLettersTypes.length)
   } else {
-    console.log("")
+    console.log("No Lowercase")
   }
   
   if (numbers) {
     gitrandomindex(numberTypes.length)
   } else {
-    console.log("")
+    console.log("No Numbers")
   }
   
   if (specialCharacters) {
     gitrandomindex(specialCharacterTypes.length)
   } else {
-    console.log("")
+    console.log("No Special Characters")
   }
 }
 
