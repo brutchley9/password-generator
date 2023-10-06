@@ -5,51 +5,42 @@ var numbers = confirm("Would you like to include numbers? (yes/no)")
 var specialCharacters = confirm("Would you like to include special characters? (yes/no)")
 var passwordLength = prompt("How long should password be (between 8 and 128 characters)?")
 
-// these are my assortment of variables for the password generator, with paramters included below
+// these are my assortment of variables for the password generator, with an associated array below
 
-var specialCharactertypes = ["!", "?", "@", "#", "$", "%", "^", "&", "*", ";"]
-var uppercaseLetterstypes = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Y", "Z"]
-var lowercaseLetterstypes = ["a", "b", "d", "c", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var specialCharacterTypes = ["!", "?", "@", "#", "$", "%", "^", "&", "*", ";"]
+var uppercaseLettersTypes = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Y", "Z"]
+var lowercaseLettersTypes = ["a", "b", "d", "c", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var numberTypes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 
-
-//series of functions designed to produce password generator
+//this is my function designed to produce a random assortment of values from each array if chosen as part of password
 
 function gitrandomindex(arraylength) {
   return Math.floor(Math.random() * arraylength)
 }
 
-var randomIndex = gitrandomindex(specialCharactertypes.length)
-
 if (uppercaseLetters) {
-
+  gitrandomindex(uppercaseLettersTypes.length)
 } else {
   console.log("")
 }
 
-
-if (lowercaseLetters === "yes" && lowercaseLetters === "Yes" && lowercaseLetters === "YES") {
-  
+if (lowercaseLetters) {
+  gitrandomindex(lowercaseLettersTypes.length)
 } else {
   console.log("")
 }
 
-
-if (numbers === "yes" && numbers === "Yes" && numbers === "YES") {
-  console.log(Math.floor(Math.random() * 999))
-  
+if (numbers) {
+  gitrandomindex(numberTypes.length)
 } else {
   console.log("")
 }
 
-
-if (specialCharacters === "yes" && specialCharacters === "Yes" && specialCharacters === "YES") {
-  
+if (specialCharacters) {
+  gitrandomindex(specialCharacterTypes.length)
 } else {
   console.log("")
 }
-
-
-
 
 function generatePassword() {
   console.log(numbers)
