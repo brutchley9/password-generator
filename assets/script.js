@@ -20,25 +20,29 @@ function gitrandomindex(arraylength) {
 
 function generatePassword() {
   if (uppercaseLetters) {
-    gitrandomindex(uppercaseLettersTypes.length)
+    let random = Math.random() * uppercaseLettersTypes.length;
+    return Math.floor(random)
   } else {
-    console.log("No Uppercase")
+    console.log("No Uppercase");
   }
   
   if (lowercaseLetters) {
-    gitrandomindex(lowercaseLettersTypes.length)
+    let random = Math.random() * lowercaseLettersTypes.length;
+    return Math.floor(random)
   } else {
     console.log("No Lowercase")
   }
   
   if (numbers) {
-    gitrandomindex(numberTypes.length)
+    let random = Math.random() * numberTypes.length;
+    return Math.floor(random)
   } else {
     console.log("No Numbers")
   }
   
   if (specialCharacters) {
-    gitrandomindex(specialCharacterTypes.length)
+    let random = Math.random() * specialCharacterTypes.length;
+    return Math.floor(random)
   } else {
     console.log("No Special Characters")
   }

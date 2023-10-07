@@ -21,3 +21,7 @@ Follow link https://github.com/brutchley9/module-3-challenge to access GitHub re
 <li>https://www.w3schools.com/js/js_random.asp</li>
 
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random</li>
+
+<li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</li>
+
+<li>https://www.w3schools.com/jsref/jsref_return.asp</li>
