@@ -25,7 +25,7 @@ function generatePassword() {
   } else {
     console.log("No Uppercase");
   }
-  
+
   if (lowercaseLetters) {
     let random = Math.random() * lowercaseLettersTypes.length;
     return Math.floor(random)
