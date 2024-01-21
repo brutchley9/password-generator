@@ -19,41 +19,48 @@ function generatePassword() {
   
   if (uppercaseLetters == true) {
     console.log('Uppercase!')
-    passwordText.push(uppercaseLettersTypes.join(''))
-    console.log(passwordText.join(''))
+    var upperText = passwordText.concat(uppercaseLettersTypes)
+    console.log(upperText)
   } else {
-    console.log('No Uppercase!')
+    console.log('No uppercase!')
+    var upperText = []
+    console.log(upperText)
   }
 
   let lowercaseLetters = confirm("Would you like to include lower case letters? (yes/no)");
   
   if (lowercaseLetters == true) {
     console.log('Lowercase!')
-    passwordText.push(lowercaseLettersTypes.join(''))
-    console.log(passwordText.join(''))
+    var lowerText = upperText.concat(lowercaseLettersTypes)
+    console.log(lowerText)
   } else {
-    console.log('No Lowercase!')
+    console.log('No lowercase!')
+    var lowerText = upperText
+    console.log(upperText)
   }
 
   let numbers = confirm("Would you like to include numbers? (yes/no)");
 
   if (numbers == true) {
     console.log('Numbers!')
-    passwordText.push(numberTypes.join(''))
-    console.log(passwordText.join(''))
+    var numberText = lowerText.concat(numberTypes)
+    console.log(numberText)
   } else {
     console.log('No numbers!')
+    var numberText = lowerText
+    console.log(lowerText)
   }
 
   let specialCharacters = confirm("Would you like to include special characters? (yes/no)");
 
   if (specialCharacters == true) {
     console.log('Special characters!')
-    passwordText.push(specialCharacterTypes.join(''))
-    console.log(passwordText.join(''))
+    var specialText = numberText.concat(specialCharacterTypes)
+    console.log(specialText)
   } else {
     console.log('No special characters!')
-    console.log(passwordText.join(''))
+    var specialText = numberText
+    console.log(numberText)
   }
 
   let passwordLength = prompt("How long should password be (between 8 and 128 characters)?");
@@ -66,17 +73,38 @@ function generatePassword() {
     return;
   } else {
     console.log(passwordLength)
-    console.log(passwordText.join(''))
-    return passwordText.join('')
+    console.log("Your password characters are " + specialText)
+    //return finalPassword;
   }
 
-  function getRandomIndex() {
+  console.log(specialText + " are your available characters as a single array. Now creating randomized string " + passwordLength + " characters long")
+
+  return specialText;
+
+
+  /*function randomize() {
+    var characterArray = [passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText]
+    var characterArrayConcat = passwordText.push(passwordText)
+    console.log(characterArrayConcat)
+    return characterArrayConcat
+    var passwordString = characterArray.join('')
+    console.log(passwordString)
+    var passwordShuffle = passwordString.sort(() => (Math.random() > .5) ? 1 : -1);
+    console.log(passwordShuffle)
+
+
+  }
+
+  randomize();*/
+
+
+  /*function getRandomIndex() {
     return Math.floor(Math.random() * passwordLength)
   }
 
   getRandomIndex(passwordText)
   console.log(passwordText)
-  return(passwordText)
+  return(passwordText)*/
 
 
 }
