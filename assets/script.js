@@ -1,10 +1,4 @@
 // Assignment code here
-/*var uppercaseLetters = confirm("Welcome to my password generator! Would you like to include uppercase letters? (yes/no)")
-var lowercaseLetters = confirm("Would you like to include lower case letters? (yes/no)")
-var numbers = confirm("Would you like to include numbers? (yes/no)")
-var specialCharacters = confirm("Would you like to include special characters? (yes/no)")
-var passwordLength = prompt("How long should password be (between 8 and 128 characters)?")*/
-
 // these are my assortment of variables for the password generator, with an associated array below
 
 var specialCharacterTypes = ["!", "?", "@", "#", "$", "%", "^", "&", "*", ";"]
@@ -16,36 +10,6 @@ var numberTypes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 
 /*function gitrandomindex(arraylength) {
   return Math.floor(Math.random() * arraylength)
-}*/
-
-/*function generatePassword() {
-  if (uppercaseLetters) {
-    let random = Math.random() * uppercaseLettersTypes.length;
-    return Math.floor(random)
-  } else {
-    console.log("No Uppercase");
-  }
-
-  if (lowercaseLetters) {
-    let random = Math.random() * lowercaseLettersTypes.length;
-    return Math.floor(random)
-  } else {
-    console.log("No Lowercase")
-  }
-  
-  if (numbers) {
-    let random = Math.random() * numberTypes.length;
-    return Math.floor(random)
-  } else {
-    console.log("No Numbers")
-  }
-  
-  if (specialCharacters) {
-    let random = Math.random() * specialCharacterTypes.length;
-    return Math.floor(random)
-  } else {
-    console.log("No Special Characters")
-  }
 }*/
 
 
@@ -87,11 +51,9 @@ function generatePassword() {
     console.log('Special characters!')
     passwordText.push(specialCharacterTypes.join(''))
     console.log(passwordText.join(''))
-    return passwordText.join('');
   } else {
     console.log('No special characters!')
     console.log(passwordText.join(''))
-    return passwordText.join('');
   }
 
   let passwordLength = prompt("How long should password be (between 8 and 128 characters)?");
@@ -104,7 +66,17 @@ function generatePassword() {
     return;
   } else {
     console.log(passwordLength)
+    console.log(passwordText.join(''))
+    return passwordText.join('')
   }
+
+  function getRandomIndex() {
+    return Math.floor(Math.random() * passwordLength)
+  }
+
+  getRandomIndex(passwordText)
+  console.log(passwordText)
+  return(passwordText)
 
 
 }
