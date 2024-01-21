@@ -1,6 +1,8 @@
 # JavaScript Password Generator
 
-The purpose of this project was to allow the user to produce a randomly-generated password, given parameters entered by the user beforehand. This was done by utilizing resources like W3Schools and Mozilla to properly compile a series of variables and functions within javascript to produce this outcome.
+The purpose of this project was to allow the user to produce a randomly-generated password, given parameters entered by the user beforehand. This was done by utilizing resources like W3Schools and Mozilla to properly compile a series of variables and functions within javascript to produce this outcome. Various array techniques were utilized and bringing this application to a user-friendly and useful state, such as the push(), concat(), sort(), slice(), and join() methods.
+
+I enjoyed taking a deep dive into JavaScript and understanding the logic behind an application such as this one, which can produce a viable, safe and entirely randomized password based upon user selections through window prompts. Please be sure to try it out yourself, and open your Web Developer Tools tab in your browser to see how this code comes together!
 
 Screenshot of webpage:
 <img src="assets/images/module3image.png">

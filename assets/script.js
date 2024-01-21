@@ -8,11 +8,6 @@ var numberTypes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 
 //this is my function designed to produce a random assortment of values from each array if chosen as part of password
 
-/*function gitrandomindex(arraylength) {
-  return Math.floor(Math.random() * arraylength)
-}*/
-
-
 function generatePassword() {
   var passwordText = [];
   let uppercaseLetters = confirm("Welcome to my password generator! Would you like to include uppercase letters? (yes/no)");
@@ -67,23 +62,18 @@ function generatePassword() {
 
   if (passwordLength > 128) {
     console.log('Too many characters!')
-    return;
+    return `Too many characters! Press button to try again.`;
   } else if (passwordLength < 8) {
     console.log('Not enough characters!')
-    return;
+    return `Not enough characters! Press button to try again.`;
   } else {
     console.log(passwordLength)
     console.log("Your password characters are " + specialText)
-    //return finalPassword;
+    
   }
 
   console.log(specialText + " are your available characters as a single array. Now creating randomized string " + passwordLength + " characters long")
-  /*var lengthSyntax = passwordLength - 1
-  var passwordSelection = specialText[lengthSyntax];
-  return passwordSelection;*/
 
-
-  
   var fullCharacterArray = specialText.concat(specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText,)
   console.log(fullCharacterArray)
   var characterShuffle = fullCharacterArray.sort(() => (Math.random() > .5) ? 1 : -1);
@@ -91,23 +81,8 @@ function generatePassword() {
   var selectedPassword = characterShuffle.slice(0, passwordLength)
   console.log(selectedPassword)
   var finalPassword = selectedPassword.join('')
-  console.log(finalPassword)
+  console.log("Your Password: " + finalPassword)
   return finalPassword;
-    /*var passwordString = characterArray.join('')
-    console.log(passwordString)
-    var passwordShuffle = passwordString.sort(() => (Math.random() > .5) ? 1 : -1);
-    console.log(passwordShuffle)*/
-
-
-
-  /*function getRandomIndex() {
-    return Math.floor(Math.random() * passwordLength)
-  }
-
-  getRandomIndex(passwordText)
-  console.log(passwordText)
-  return(passwordText)*/
-
 
 }
 
