@@ -87,8 +87,11 @@ function generatePassword() {
     console.log('Special characters!')
     passwordText.push(specialCharacterTypes.join(''))
     console.log(passwordText.join(''))
+    return passwordText.join('');
   } else {
     console.log('No special characters!')
+    console.log(passwordText.join(''))
+    return passwordText.join('');
   }
 
   let passwordLength = prompt("How long should password be (between 8 and 128 characters)?");
