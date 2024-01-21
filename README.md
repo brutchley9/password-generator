@@ -25,3 +25,7 @@ Follow link https://github.com/brutchley9/module-3-challenge to access GitHub re
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</li>
 
 <li>https://www.w3schools.com/jsref/jsref_return.asp</li>
+
+<li>https://www.w3schools.com/jsref/met_win_confirm.asp</li>
+
+<li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join</li>

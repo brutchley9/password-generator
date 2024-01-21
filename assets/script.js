@@ -1,9 +1,9 @@
 // Assignment code here
-var uppercaseLetters = confirm("Welcome to my password generator! Would you like to conlude Uppercase letters? (yes/no)")
+/*var uppercaseLetters = confirm("Welcome to my password generator! Would you like to include uppercase letters? (yes/no)")
 var lowercaseLetters = confirm("Would you like to include lower case letters? (yes/no)")
 var numbers = confirm("Would you like to include numbers? (yes/no)")
 var specialCharacters = confirm("Would you like to include special characters? (yes/no)")
-var passwordLength = prompt("How long should password be (between 8 and 128 characters)?")
+var passwordLength = prompt("How long should password be (between 8 and 128 characters)?")*/
 
 // these are my assortment of variables for the password generator, with an associated array below
 
@@ -14,11 +14,11 @@ var numberTypes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 
 //this is my function designed to produce a random assortment of values from each array if chosen as part of password
 
-function gitrandomindex(arraylength) {
+/*function gitrandomindex(arraylength) {
   return Math.floor(Math.random() * arraylength)
-}
+}*/
 
-function generatePassword() {
+/*function generatePassword() {
   if (uppercaseLetters) {
     let random = Math.random() * uppercaseLettersTypes.length;
     return Math.floor(random)
@@ -46,7 +46,67 @@ function generatePassword() {
   } else {
     console.log("No Special Characters")
   }
+}*/
+
+
+function generatePassword() {
+  var passwordText = [];
+  let uppercaseLetters = confirm("Welcome to my password generator! Would you like to include uppercase letters? (yes/no)");
+  
+  if (uppercaseLetters == true) {
+    console.log('Uppercase!')
+    passwordText.push(uppercaseLettersTypes.join(''))
+    console.log(passwordText.join(''))
+  } else {
+    console.log('No Uppercase!')
+  }
+
+  let lowercaseLetters = confirm("Would you like to include lower case letters? (yes/no)");
+  
+  if (lowercaseLetters == true) {
+    console.log('Lowercase!')
+    passwordText.push(lowercaseLettersTypes.join(''))
+    console.log(passwordText.join(''))
+  } else {
+    console.log('No Lowercase!')
+  }
+
+  let numbers = confirm("Would you like to include numbers? (yes/no)");
+
+  if (numbers == true) {
+    console.log('Numbers!')
+    passwordText.push(numberTypes.join(''))
+    console.log(passwordText.join(''))
+  } else {
+    console.log('No numbers!')
+  }
+
+  let specialCharacters = confirm("Would you like to include special characters? (yes/no)");
+
+  if (specialCharacters == true) {
+    console.log('Special characters!')
+    passwordText.push(specialCharacterTypes.join(''))
+    console.log(passwordText.join(''))
+  } else {
+    console.log('No special characters!')
+  }
+
+  let passwordLength = prompt("How long should password be (between 8 and 128 characters)?");
+
+  if (passwordLength > 128) {
+    console.log('Too many characters!')
+    return;
+  } else if (passwordLength < 8) {
+    console.log('Not enough characters!')
+    return;
+  } else {
+    console.log(passwordLength)
+  }
+
+
 }
+
+
 
 
 
