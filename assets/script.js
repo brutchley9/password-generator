@@ -83,18 +83,21 @@ function generatePassword() {
   return passwordSelection;*/
 
 
-  function randomize() {
-    var fullCharacterArray = specialText.concat(specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText,)
-    console.log(fullCharacterArray)
+  
+  var fullCharacterArray = specialText.concat(specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText,)
+  console.log(fullCharacterArray)
+  var characterShuffle = fullCharacterArray.sort(() => (Math.random() > .5) ? 1 : -1);
+  console.log(characterShuffle)
+  var selectedPassword = characterShuffle.slice(0, passwordLength)
+  console.log(selectedPassword)
+  var finalPassword = selectedPassword.join('')
+  console.log(finalPassword)
+  return finalPassword;
     /*var passwordString = characterArray.join('')
     console.log(passwordString)
     var passwordShuffle = passwordString.sort(() => (Math.random() > .5) ? 1 : -1);
     console.log(passwordShuffle)*/
 
-
-  }
-
-  randomize();
 
 
   /*function getRandomIndex() {

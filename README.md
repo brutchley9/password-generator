@@ -31,3 +31,5 @@ Follow link https://github.com/brutchley9/module-3-challenge to access GitHub re
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join</li>
 
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat</li>
+
+<li>https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array</li>
