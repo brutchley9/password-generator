@@ -78,24 +78,23 @@ function generatePassword() {
   }
 
   console.log(specialText + " are your available characters as a single array. Now creating randomized string " + passwordLength + " characters long")
+  /*var lengthSyntax = passwordLength - 1
+  var passwordSelection = specialText[lengthSyntax];
+  return passwordSelection;*/
 
-  return specialText;
 
-
-  /*function randomize() {
-    var characterArray = [passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText, passwordText]
-    var characterArrayConcat = passwordText.push(passwordText)
-    console.log(characterArrayConcat)
-    return characterArrayConcat
-    var passwordString = characterArray.join('')
+  function randomize() {
+    var fullCharacterArray = specialText.concat(specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText, specialText,)
+    console.log(fullCharacterArray)
+    /*var passwordString = characterArray.join('')
     console.log(passwordString)
     var passwordShuffle = passwordString.sort(() => (Math.random() > .5) ? 1 : -1);
-    console.log(passwordShuffle)
+    console.log(passwordShuffle)*/
 
 
   }
 
-  randomize();*/
+  randomize();
 
 
   /*function getRandomIndex() {
