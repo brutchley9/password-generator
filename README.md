@@ -8,9 +8,9 @@ Screenshot of webpage:
 <img src="assets/images/module3image.png">
 ---
 
-Follow link https://brutchley9.github.io/module-3-challenge/ to access this website!
+Follow link https://brutchley9.github.io/password-generator/ to access this website!
 
-Follow link https://github.com/brutchley9/module-3-challenge to access GitHub repository for this website (including code).
+Follow link https://github.com/brutchley9/password-generator/ to access GitHub repository for this website (including code).
 
 ---
 
